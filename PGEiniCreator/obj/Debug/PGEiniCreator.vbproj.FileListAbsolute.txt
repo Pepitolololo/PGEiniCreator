@@ -1,0 +1,10 @@
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\bin\Debug\PGEiniCreator.exe.config
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\bin\Debug\PGEiniCreator.exe
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\bin\Debug\PGEiniCreator.pdb
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\bin\Debug\PGEiniCreator.xml
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.vbprojResolveAssemblyReference.cache
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.Resources.resources
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.vbproj.GenerateResource.Cache
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.exe
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.xml
+C:\Users\Gamer2020\Desktop\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.pdb
