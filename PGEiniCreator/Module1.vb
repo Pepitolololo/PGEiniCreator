@@ -74,6 +74,22 @@
                 WriteString(AppPath & "test.ini", "BPEE", "SecondDexTable", splitstring(1).Remove(0, 2))
             ElseIf Line.StartsWith("hoenn_to_national_table") = True Then
                 WriteString(AppPath & "test.ini", "BPEE", "HoenntoNationalDex", splitstring(1).Remove(0, 2))
+            ElseIf Line.StartsWith("item_table") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "ItemData", splitstring(1).Remove(0, 2))
+            ElseIf Line.StartsWith("item_images") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "ItemIMGData", splitstring(1).Remove(0, 2))
+            ElseIf Line.StartsWith("TM_compatibility_table") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "TMHMCompatibility", splitstring(1).Remove(0, 2))
+            ElseIf Line.StartsWith("MoveTutor_compatibility_table") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "MoveTutorCompatibility", splitstring(1).Remove(0, 2))
+            ElseIf Line.StartsWith("ItemsNo") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "NumberOfItems", splitstring(1) + 1)
+            ElseIf Line.StartsWith("TutorMoves") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "NumberOfMoveTutorAttacks", splitstring(1))
+            ElseIf Line.StartsWith("TMsNo") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "TotalTMs", splitstring(1))
+            ElseIf Line.StartsWith("TMs+HMs") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "TotalTMsPlusHMs", splitstring(1))
             End If
         Next
 
@@ -87,6 +103,10 @@
                 WriteString(AppPath & "test.ini", "BPEE", "PokedexLightestTable", splitstring2(22).Remove(0, 2))
             ElseIf Line.StartsWith("smallest_table") = True Then
                 WriteString(AppPath & "test.ini", "BPEE", "PokedexSmallestTable", splitstring2(22).Remove(0, 2))
+            ElseIf Line.StartsWith("TM_move_table") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "TMData", splitstring2(14).Remove(0, 2))
+            ElseIf Line.StartsWith("Tutor_Move_Table") = True Then
+                WriteString(AppPath & "test.ini", "BPEE", "MoveTutorAttacks", splitstring2(11).Remove(0, 2))
             End If
 
         Next
