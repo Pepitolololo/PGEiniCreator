@@ -15,6 +15,12 @@
 
         End If
 
+        If (IO.File.Exists(AppPath & "test.ini")) = False Then
+
+            DownloadFile("https://raw.githubusercontent.com/Gamer2020/PokemonGameEditor/master/GBAPokemonGameEditor/bin/Debug/ini/roms.ini", AppPath & "test.ini")
+
+        End If
+
         For Each Line As String In IO.File.ReadLines(AppPath & "offsets.ini")
 
             Dim splitstring As String() = Line.Split(New String() {" "}, StringSplitOptions.None)
