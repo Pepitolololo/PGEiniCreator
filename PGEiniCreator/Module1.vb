@@ -110,15 +110,25 @@
             Dim splitstring2 As String() = Line.Split(New String() {" "}, StringSplitOptions.None)
 
             If Line.StartsWith("a_to_z_table") = True Then
-                WriteString(AppPath & "test.ini", "BPEE", "PokedexAlphabetTable", splitstring2(24).Remove(0, 2))
+
+                WriteString(AppPath & "test.ini", "BPEE", "PokedexAlphabetTable", Hex(Val("&H" & splitstring2(24).Remove(0, 1)) - &H8000000))
+
             ElseIf Line.StartsWith("lightest_table") = True Then
-                WriteString(AppPath & "test.ini", "BPEE", "PokedexLightestTable", splitstring2(22).Remove(0, 2))
+
+                WriteString(AppPath & "test.ini", "BPEE", "PokedexLightestTable", Hex(Val("&H" & splitstring2(22).Remove(0, 1)) - &H8000000))
+
             ElseIf Line.StartsWith("smallest_table") = True Then
-                WriteString(AppPath & "test.ini", "BPEE", "PokedexSmallestTable", splitstring2(22).Remove(0, 2))
+
+                WriteString(AppPath & "test.ini", "BPEE", "PokedexSmallestTable", Hex(Val("&H" & splitstring2(22).Remove(0, 1)) - &H8000000))
+
             ElseIf Line.StartsWith("TM_move_table") = True Then
-                WriteString(AppPath & "test.ini", "BPEE", "TMData", splitstring2(14).Remove(0, 2))
+
+                WriteString(AppPath & "test.ini", "BPEE", "TMData", Hex(Val("&H" & splitstring2(14).Remove(0, 1)) - &H8000000))
+
             ElseIf Line.StartsWith("Tutor_Move_Table") = True Then
-                WriteString(AppPath & "test.ini", "BPEE", "MoveTutorAttacks", splitstring2(11).Remove(0, 2))
+
+                WriteString(AppPath & "test.ini", "BPEE", "MoveTutorAttacks", Hex(Val("&H" & splitstring2(11).Remove(0, 1)) - &H8000000))
+
             End If
 
         Next
