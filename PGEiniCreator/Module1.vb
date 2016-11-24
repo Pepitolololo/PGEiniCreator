@@ -95,7 +95,10 @@
             ElseIf Line.StartsWith("TMsNo") = True Then
                 WriteString(AppPath & "test.ini", "BPEE", "TotalTMs", splitstring(1))
             ElseIf Line.StartsWith("TMs+HMs") = True Then
+
                 WriteString(AppPath & "test.ini", "BPEE", "TotalTMsPlusHMs", splitstring(1))
+                WriteString(AppPath & "test.ini", "BPEE", "TMHMLenPerPoke", Math.Ceiling(splitstring(1) / 8))
+
             ElseIf Line.StartsWith("front_animation_table") = True Then
                 WriteString(AppPath & "test.ini", "BPEE", "FrontAnimationTable", splitstring(1).Remove(0, 2))
             ElseIf Line.StartsWith("anim_delay_table") = True Then
