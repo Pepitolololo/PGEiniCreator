@@ -18,3 +18,5 @@ D:\Github\PGEiniCreator\PGEiniCreator\bin\Debug\PGEiniCreator.xml
 D:\Github\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.vbprojResolveAssemblyReference.cache
 D:\Github\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.Resources.resources
 D:\Github\PGEiniCreator\PGEiniCreator\obj\Debug\PGEiniCreator.vbproj.GenerateResource.Cache
+D:\Github\PGEiniCreator\PGEiniCreator\bin\Debug\System.Net.Http.dll
+D:\Github\PGEiniCreator\PGEiniCreator\bin\Debug\System.Net.Http.xml
